@@ -1,10 +1,217 @@
-<html>
-  <head>
-    <title>GVFS</title>
-  </head>
-  <body style="background-color: #000000; color: #dddddd; font-family: 'Segoe UI Light', Selawik, Arial, Helvetica; font-size: 36px;">
-    <div style="width: 100%; margin: 225px auto 0 auto; text-align: center;">
-      GVFS : Coming Soon
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>GVFS: Git at Enterprise Scale</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://assets.onestore.ms/cdnfiles/external/mwf/short/v1/latest/css/mwf-west-european-default.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!-- Accessibility requirement -->
+<a class="m-skip-to-main" href="#mainContent" tabindex="0">Skip to main content</a>
+
+<!-- Universal header -->
+
+<!-- Main page content should be wrapped with semantically meaningful html elements (e.g.: article, main) whenever possible. A div element can be used as long as it also contains a role="main" for Accessibility. -->
+
+<main id="mainContent">
+  <!-- Modules should be stacked with a sibling relationship in order to programmatically adjust their position, margins, and padding. -->
+  <div id="gvfs-pageHeader" data-grid="container">
+    <div data-grid="col-12" class="m-content-placement">
+      <div data-grid="col-8">
+      <h1 class="c-heading-2">GVFS: Git at Enterprise Scale</h1>
+      <p class="c-subheading-3">Git sees everything. You only download what you need.</p>
+      <p class="c-paragraph-3"><a href="https://github.com/Microsoft/GVFS" class="c-call-to-action c-glyph">DOWNLOAD FOR WINDOWS</a></p>
     </div>
-  </body>
+      <div data-grid="col-4">
+       <picture>
+        <img src="images/header.png"
+          class="x-hidden-focus" alt="Diagram with Git logo and various files being downloaded">
+        </picture>
+    </div>
+    </div>
+  </div>
+
+  <div data-grid="container">
+  <div data-grid="col-12" class="m-content-placement">
+    <div data-grid="col-6" class="m-content-placement-item">
+      <h2 class="c-heading-3 f-lean">What is GVFS?</h2>
+      <p class="c-paragraph-2">Git Virtual File System (GVFS) is an open source system that enables Git to operate at enterprise-scale. It makes using and managing massive Git repositories possible.</p>
+      <p class="c-paragraph-3"><a href="https://github.com/Microsoft/GVFS" class="c-call-to-action c-glyph f-lightweight">GET STARTED</a></p>
+    </div>
+  </div>
+
+  <div id="gvfs-howDoesItWork" data-grid="col-12 stack-2" class="m-content-placement">
+      <div data-grid="col-6" class="m-content-placement-item f-size-large">
+        <picture>
+          <img src="images/how-does-gvfs-work.png"
+          class="x-hidden-focus" alt="Diagram files in the cloud on the left, GVFS in the center, and some downloaded local files on the right">
+        </picture>
+      </div>
+      <div data-grid="col-6" class="m-content-placement-item f-size-large">
+
+        <h2 class="c-heading-3 f-lean">How does it work?</h2>
+        <p class="c-paragraph-3">GVFS virtualizes the filesystem beneath your Git repository so that Git tools see what appears to be a normal repository when, in fact, the files are not actually present on disk. GVFS only downloads files as they are needed.</p>
+
+        <p class="c-paragraph-3">GVFS also manages Git's internal state so that it only considers the files you have accessed, instead of having to examine every file in the repository. This ensures that operations like status and checkout are as fast as possible.
+        </p>
+        <p class="c-paragraph-3"><a href="https://visualstudio.com/git-at-scale/" class="c-call-to-action c-glyph f-lightweight">LEARN MORE</a></p>
+
+      </div>
+    </div>
+
+  <div data-grid="col-12" class="m-content-placement">
+    <div data-grid="col-6" class="m-content-placement-item f-size-large">
+      <h2 class="c-heading-3 f-lean">Why GVFS?</h2>
+      <p class="c-paragraph-3">Git struggles to handle enterprise-scale repositories. Operations like cloning will slow to a crawl when you have millions of files in a repository, and even something as simple as getting your repository status will leave you waiting.</p>
+
+      <p class="c-paragraph-3">GVFS was created by the <a href="https://www.visualstudio.com/team-services/" class="c-hyperlink">Visual Studio Team Services</a> team at Microsoft, specifically to deal with these scale issues for Microsoft's own codebases.</p>
+
+      <p class="c-paragraph-3">With GVFS, developers using Git and Visual Studio Team Services can stay productive, even in mammoth repositories like the Windows operating system, which clocks in at roughly 300 GB (3.5 million files). It's the <a href="https://blogs.msdn.microsoft.com/bharry/2017/05/24/the-largest-git-repo-on-the-planet/"
+          class="c-hyperlink">largest Git repository in the world</a>.</p>
+
+      <p class="c-paragraph-3">GVFS is freely available and Open Source. If your team and your codebase are growing to enterprise-scale, GVFS may be a great fit.</p>
+    </div>
+    <div data-grid="col-6" class="m-content-placement-item f-size-large">
+      <picture>
+        <img src="images/why-gvfs.png" alt="Three-up display of logos with Windows, Git, and Visual Studio Team Services">
+      </picture>
+    </div>
+  </div>
+
+  <div data-grid="col-12" class="m-content-placement">
+    <h2 class="c-heading-3">Example: GVFS and the Windows repository</h2>
+    <p class="c-paragraph-3">Here's a comparison of some common Git actions on the Windows repository with Visual Studio Team Services.</p>
+    <div class="c-table">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col" colspan="1">Action</th>
+            <th scope="col" colspan="1">Without GVFS</th>
+            <th scope="col" colspan="1" class="gvfs-tableHighlight">With GVFS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="gvfs-monospace">Clone</span> (Bare)</td>
+            <td>12+ hours</td>
+            <td class="gvfs-tableHighlight">4-5 minutes</td>
+          </tr>
+          <tr>
+            <td><span class="gvfs-monospace">Checkout</span></td>
+            <td>3 hours</td>
+            <td class="gvfs-tableHighlight">30 seconds</td>
+          </tr>
+          <tr>
+            <td><span class="gvfs-monospace">Status</span></td>
+            <td>10 minutes</td>
+            <td class="gvfs-tableHighlight">5 seconds</td>
+          </tr>
+          <tr>
+            <td><span class="gvfs-monospace">Commit</span></td>
+            <td>30 minutes</td>
+            <td class="gvfs-tableHighlight">5 seconds</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+
+  <div id="gvfs-gitAtScaleArticles" data-grid="container">
+    <div data-grid="col-12 stack-2 pad-6x" class="m-content-placement">
+      <div data-grid="col-4">
+      <h2 class="c-heading-3">Git at Scale</h2>
+      <p class="c-paragraph-3">The recent migration of the Windows codebase to a single Git repo presented us with some very interesting scale challenges. In this series of articles, we'll discuss each of these challenges in depth, and how we solved them.</p>
+      <p class="c-paragraph-3"><a href="https://www.visualstudio.com/learn/git-at-scale/" class="c-call-to-action c-glyph f-lightweight">READ ARTICLE</a></p>
+    </div>
+      <div data-grid="col-4">
+      <h2 class="c-heading-3">Technical Scale Challenges</h2>
+      <p class="c-paragraph-3">It's become "common knowledge" that Git struggles with larger repos, but what does that mean, exactly? In this article, we'll break dows the challenges Git faces when scaling to large repos.</p>
+      <p class="c-paragraph-3"><a href="https://www.visualstudio.com/learn/technical-scale-challenges/" class="c-call-to-action c-glyph f-lightweight">READ ARTICLE</a></p>
+    </div>
+      <div data-grid="col-4">
+      <h2 class="c-heading-3">GVFS Design History</h2>
+      <p class="c-paragraph-3">In this article, we'll cover how we arrived at the need for GVFS and the alternatives that we looked at along the way.</p>
+      <p class="c-paragraph-3"><a href="https://www.visualstudio.com/learn/gvfs-design-history/" class="c-call-to-action c-glyph f-lightweight">READ ARTICLE</a></p>
+    </div>
+    </div>
+  </div>
+
+  <div data-grid="container"> 
+    <div data-grid="col-12" class="m-content-placement">
+        <h2 class="c-heading-3">GVFS in the news</h2>
+        <div class="c-content-toggle">
+          <ul id="contentToggleUnorderedList1" data-f-expanded="false" class="c-list">
+            <li><a href="https://techcrunch.com/2017/05/24/microsoft-now-uses-git-and-gvfs-to-develop-windows/" class="c-hyperlink">Microsoft now uses Git and GVFS to develop Windows</a> <br />TechCrunch</li>
+            <li><a href="https://arstechnica.com/information-technology/2017/02/microsoft-hosts-the-windows-source-in-a-monstrous-300gb-git-repository/?comments=1&post=32777009" class="c-hyperlink">Microsoft hosts the Windows source in a monstrous 300GB Git repository</a> <br />ArsTechnica</li>
+            <li><a href="http://www.infoworld.com/article/3198092/development-tools/microsoft-brings-scalable-git-to-visual-studio-in-improved-gvfs.html" class="c-hyperlink">Microsoft brings scalable Git to Visual Studio in improved GVFS</a> <br />InfoWorld</li>
+          </ul>
+        </div>
+    </div>
+  </div>
+
+    <div id="gvfs-trustedBy" data-grid="container">
+      <div data-grid="col-12" class="m-content-placement">
+      <div data-grid="col-12" class="m-banner">
+        <h2 class="c-heading-3">Trusted by:</h2>
+      </div>
+      <div data-grid="col-12" class="m-banner">
+          <img src="images/logo-visualstudio.png" height="48px" alt="Visual Studio logo" />
+          <img src="images/logo-vsts.png" height="48px" alt="Visual Studio Team Services logo" />
+      </div>
+      <div data-grid="col-12" class="m-banner">
+    <img src="images/logo-tower.png" height="48px" alt="GitTower logo" />
+    <img src="images/logo-sourcetree.png" height="48px" alt="SourceTree logo" />
+        <span>
+        <img src="images/logo-gitkraken.png" height="48px" alt="GitKraken logo" />
+        <br />(Coming soon)
+        </span>
+      </div>
+      </div>
+  </div>
+
+  <div data-grid="container">
+    <div data-grid="col-12" class="m-content-placement">
+    <div data-grid="col-6 switch-4" class="m-content-placement-item f-size-large">
+      <h2 class="c-heading-3 f-lean">License</h2>
+      <p class="c-paragraph-3">GVFS is Open Source, available under an <a href="https://github.com/Microsoft/GVFS/blob/master/License.md" class="c-hyperlink">MIT license</a>.</p>
+    </div>
+    <div data-grid="col-6 switch-4" class="m-content-placement-item f-size-large">
+      <h2 class="c-heading-3 f-lean">Contribute</h2>
+      <p class="c-paragraph-3">See the <a href="https://github.com/Microsoft/GVFS" class="c-hyperlink">repository on GitHub</a>.</p>
+    </div>
+    </div>
+  </div>
+
+  <div id="gvfs-footer" data-grid="container">
+    <div data-grid"col-12" class="m-content-placement">  
+    <p class="c-paragraph-3">GVFS is Open Source with &hearts; from <a href="https://www.microsoft.com/" class="c-hyperlink"><strong>Microsoft</strong></a>.</p>
+    </div>
+  </div>
+
+
+</main>
+
+<!-- Universal footer -->
+
+<!-- JavaScript requirements -->
+<!-- Include before </body>. Use the script file based on preference (UMD, AMD, CommonJS, Auto, etc.) -->
+<script async="async" src="//assets.onestore.ms/cdnfiles/external/mwf/short/v1/latest/scripts/mwf-auto-init-main.var.min.js"></script>
+<noscript></noscript>
+
+<!-- JavaScript dependencies -->
+<!-- ... -->
+
+<!-- JavaScript additions -->
+<!-- ... -->
+  
+  
+</body>
 </html>

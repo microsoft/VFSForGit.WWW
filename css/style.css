@@ -1,0 +1,66 @@
+#gvfs-pageHeader {
+  background: #0078d7 url("../images/bg-pageheader.png") bottom center no-repeat;
+  color: #fff;
+  padding-bottom: 48px;
+  padding-top: 48px;
+}
+#gvfs-pageHeader img {
+  max-width: 100%;
+}
+
+@media (max-width: 540px) {
+  #gvfs-pageHeader img {
+    display: none;
+  }
+}
+#gvfs-howDoesItWork {
+  background: #f4f4f4 url("../images/bg-grey-left.png") bottom left no-repeat;
+  margin-top: 48px;
+  padding-bottom: 48px;
+}
+
+#gvfs-gitAtScaleArticles {
+  background: #f4f4f4 url("../images/bg-grey-right.png") bottom right no-repeat;
+  margin-top: 48px;
+  padding-bottom: 48px;
+}
+
+#gvfs-trustedBy {
+  background: #f4f4f4;
+  margin-top: 48px;
+  padding-bottom: 48px;
+}
+#gvfs-trustedBy span {
+  display: inline-block;
+  margin-top: -36px;
+  position: relative;
+  top: 36px;
+}
+
+#gvfs-footer {
+  background: #005a9e url("../images/bg-pageheader.png") bottom left no-repeat;
+  color: #fff;
+  margin-top: 48px;
+  padding-bottom: 128px;
+}
+#gvfs-footer a {
+  color: #fff;
+}
+
+#contentToggleUnorderedList1 li a {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.gvfs-monospace {
+  font-family: monospace;
+}
+
+.gvfs-tableHighlight {
+  background-color: #eff6fc;
+}
+
+.m-content-placement p .c-hyperlink,
+.m-content-placement-item p .c-hyperlink {
+  padding: 0;
+}
