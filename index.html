@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   <meta charset="UTF-8">
   <title>GVFS: Git at Enterprise Scale</title>
   
-  
   <link rel='stylesheet prefetch' href='https://assets.onestore.ms/cdnfiles/external/mwf/short/v1/latest/css/mwf-west-european-default.min.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <!-- Accessibility requirement -->
+<!-- Accessibility requirement -->
 <a class="m-skip-to-main" href="#mainContent" tabindex="0">Skip to main content</a>
 
 <!-- Universal header -->
@@ -28,13 +24,21 @@
       <h1 class="c-heading-2">GVFS: Git at Enterprise Scale</h1>
       <p class="c-subheading-3">Make massive repositories feel lightweight and fast</p>
       <p class="c-paragraph-3"><a href="https://github.com/Microsoft/GVFS" class="c-call-to-action c-glyph">DOWNLOAD FOR WINDOWS</a></p>
+
     </div>
       <div data-grid="col-4">
        <picture>
-        <img src="images/header.png"
-          class="x-hidden-focus" alt="Diagram with Git logo and various files being downloaded">
+        <img src="images/header.png" class="x-hidden-focus" alt="Diagram with Git logo and various files being downloaded">
         </picture>
     </div>
+    </div>
+  </div>
+
+  <div id="gvfs-attribution" data-grid="container">
+    <div data-grid="col-12">
+      <div class="gvfs-attribution">
+          <p class="c-paragraph-3"><small>Created by Microsoft to support the development of Microsoft Windows, the largest Git repository on earth. &nbsp;  | &nbsp; <a class="c-logo" href="https://www.microsoft.com" aria-label="Microsoft"><img class="c-image x-hidden-focus" alt="Microsoft" src="https://assets.onestore.ms/cdnfiles/external/uhf/long/9a49a7e9d8e881327e81b9eb43dabc01de70a9bb/images/microsoft-gray.png"><span>Microsoft</span></a></small></p>
+        </div>
     </div>
   </div>
 
@@ -59,8 +63,8 @@
         <h2 class="c-heading-3 f-lean">How does it work?</h2>
         <p class="c-paragraph-3">GVFS virtualizes the filesystem beneath your Git repository so that Git tools see what appears to be a normal repository when, in fact, the files are not actually present on disk. GVFS only downloads files as they are needed.</p>
 
-        <p class="c-paragraph-3">GVFS also manages Git's internal state so that it only considers the files you have accessed, instead of having to examine every file in the repository. This ensures that operations like status and checkout are as fast as possible.
-        </p>
+        <p class="c-paragraph-3">GVFS also manages Git's internal state so that it only considers the files you have accessed, instead of having to examine every file in the repository. This ensures that operations like status and checkout are as fast as possible.</p>
+
         <p class="c-paragraph-3"><a href="https://visualstudio.com/git-at-scale/" class="c-call-to-action c-glyph f-lightweight">LEARN MORE</a></p>
 
       </div>
@@ -149,10 +153,12 @@
         <h2 class="c-heading-3">GVFS in the news</h2>
         <div class="c-content-toggle">
           <ul id="contentToggleUnorderedList1" data-f-expanded="false" class="c-list">
+            <li><a href="http://sdtimes.com/microsoft-releases-git-virtual-file-system-performance-results/" class="c-hyperlink">Microsoft releases Git Virtual File System performance results</a> <br />SD Times</li>
             <li><a href="https://techcrunch.com/2017/05/24/microsoft-now-uses-git-and-gvfs-to-develop-windows/" class="c-hyperlink">Microsoft now uses Git and GVFS to develop Windows</a> <br />TechCrunch</li>
             <li><a href="https://arstechnica.com/information-technology/2017/02/microsoft-hosts-the-windows-source-in-a-monstrous-300gb-git-repository/?comments=1&post=32777009" class="c-hyperlink">Microsoft hosts the Windows source in a monstrous 300GB Git repository</a> <br />ArsTechnica</li>
             <li><a href="http://www.infoworld.com/article/3198092/development-tools/microsoft-brings-scalable-git-to-visual-studio-in-improved-gvfs.html" class="c-hyperlink">Microsoft brings scalable Git to Visual Studio in improved GVFS</a> <br />InfoWorld</li>
           </ul>
+          <button data-f-more="More" data-f-less="Less" data-f-show="9" aria-hidden="true">More</button>
         </div>
     </div>
   </div>
@@ -167,11 +173,11 @@
           <a href="https://www.visualstudio.com/vs/"><img src="images/logo-visualstudio.png" height="48px" alt="Visual Studio logo" /></a>
       </div>
       <div data-grid="col-12" class="m-banner">
-    <a href="https://www.git-tower.com/windows/"><img src="images/logo-tower.png" height="48px" alt="GitTower logo" /></a>
-    <a href="https://www.sourcetreeapp.com/"><img src="images/logo-sourcetree.png" height="48px" alt="SourceTree logo" /></a>
+        <a href="https://www.git-tower.com/windows/"><img src="images/logo-tower.png" height="48px" alt="GitTower logo" /></a>
+        <a href="https://www.sourcetreeapp.com/"><img src="images/logo-sourcetree.png" height="48px" alt="SourceTree logo" /></a>
         <span>
-        <a href="https://www.gitkraken.com/"><img src="images/logo-gitkraken.png" height="48px" alt="GitKraken logo" /></a>
-        <br />(Coming soon)
+          <a href="https://www.gitkraken.com/"><img src="images/logo-gitkraken.png" height="48px" alt="GitKraken logo" /></a>
+          <br />(Coming soon)
         </span>
       </div>
       </div>
@@ -191,12 +197,10 @@
   </div>
 
   <div id="gvfs-footer" data-grid="container">
-    <div data-grid"col-12" class="m-content-placement">  
-    <p class="c-paragraph-3">GVFS is Open Source with &hearts; from <a href="https://www.microsoft.com/" class="c-hyperlink"><strong>Microsoft</strong></a>.</p>
+    <div data-grid"col-12" class="m-content-placement">
+    <p class="c-paragraph-3">GVFS was created by the <a href="https://www.visualstudio.com/team-services/" class="c-hyperlink">Visual Studio Team Services</a> team and is Open Source with &hearts; from <a href="https://www.microsoft.com/" class="c-hyperlink"><strong>Microsoft</strong></a>.</p>
     </div>
   </div>
-
-
 </main>
 
 <!-- Universal footer -->
@@ -211,7 +215,6 @@
 
 <!-- JavaScript additions -->
 <!-- ... -->
-  
-  
+    
 </body>
 </html>

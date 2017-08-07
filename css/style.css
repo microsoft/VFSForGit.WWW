@@ -12,6 +12,10 @@
   #gvfs-pageHeader img {
     display: none;
   }
+  .m-content-placement {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 #gvfs-howDoesItWork {
   background: #f4f4f4 url("../images/bg-grey-left.png") bottom left no-repeat;
@@ -50,6 +54,39 @@
 #contentToggleUnorderedList1 li a {
   font-weight: 600;
   font-style: italic;
+}
+
+#gvfs-attribution {
+  background: #f4f4f4;
+  color: #666;
+  text-align: center;
+}
+#gvfs-attribution .c-paragraph-3 {
+  margin: 0;
+  padding: 12px 0;
+}
+#gvfs-attribution img {
+  display: inline;
+  height: 1.25em;
+  vertical-align: text-bottom;
+}
+
+.m-feature picture {
+  margin-bottom: 32px;
+}
+
+.gvfs-videoWrapper {
+  position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+  height: 0;
+}
+.gvfs-videoWrapper iframe {
+  position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
 }
 
 .gvfs-monospace {
