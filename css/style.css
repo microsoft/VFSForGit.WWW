@@ -1,15 +1,15 @@
-#gvfs-pageHeader {
+#vfsforgit-pageHeader {
   background: #0078d7 url("../images/bg-pageheader.png") bottom center no-repeat;
   color: #fff;
   padding-bottom: 48px;
   padding-top: 48px;
 }
-#gvfs-pageHeader img {
+#vfsforgit-pageHeader img {
   max-width: 100%;
 }
 
 @media (max-width: 540px) {
-  #gvfs-pageHeader img {
+  #vfsforgit-pageHeader img {
     display: none;
   }
   .m-content-placement {
@@ -17,37 +17,37 @@
     padding-right: 12px;
   }
 }
-#gvfs-howDoesItWork {
+#vfsforgit-howDoesItWork {
   background: #f4f4f4 url("../images/bg-grey-left.png") bottom left no-repeat;
   margin-top: 48px;
   padding-bottom: 48px;
 }
 
-#gvfs-gitAtScaleArticles {
+#vfsforgit-gitAtScaleArticles {
   background: #f4f4f4 url("../images/bg-grey-right.png") bottom right no-repeat;
   margin-top: 48px;
   padding-bottom: 48px;
 }
 
-#gvfs-trustedBy {
+#vfsforgit-trustedBy {
   background: #f4f4f4;
   margin-top: 48px;
   padding-bottom: 48px;
 }
-#gvfs-trustedBy span {
+#vfsforgit-trustedBy span {
   display: inline-block;
   margin-top: -36px;
   position: relative;
   top: 36px;
 }
 
-#gvfs-footer {
+#vfsforgit-footer {
   background: #005a9e url("../images/bg-pageheader.png") bottom left no-repeat;
   color: #fff;
   margin-top: 48px;
   padding-bottom: 128px;
 }
-#gvfs-footer a {
+#vfsforgit-footer a {
   color: #fff;
 }
 
@@ -56,16 +56,16 @@
   font-style: italic;
 }
 
-#gvfs-attribution {
+#vfsforgit-attribution {
   background: #f4f4f4;
   color: #666;
   text-align: center;
 }
-#gvfs-attribution .c-paragraph-3 {
+#vfsforgit-attribution .c-paragraph-3 {
   margin: 0;
   padding: 12px 0;
 }
-#gvfs-attribution img {
+#vfsforgit-attribution img {
   display: inline;
   height: 1.25em;
   vertical-align: text-bottom;
@@ -75,13 +75,13 @@
   margin-bottom: 32px;
 }
 
-.gvfs-videoWrapper {
+.vfsforgit-videoWrapper {
   position: relative;
   width: 390px;
   height: 220px;
   margin: 25px 0 0 50px;
 }
-.gvfs-videoWrapper iframe {
+.vfsforgit-videoWrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -89,11 +89,11 @@
   height: 100%;
 }
 
-.gvfs-monospace {
+.vfsforgit-monospace {
   font-family: monospace;
 }
 
-.gvfs-tableHighlight {
+.vfsforgit-tableHighlight {
   background-color: #eff6fc;
 }
 
