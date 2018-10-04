@@ -1,6 +1,6 @@
 # GVFS.WWW 
 
-This is the [web site for GVFS](http:// www.vfsforgit.org ), the technology
+This is the [web site for GVFS](www.vfsforgit.org ), the technology
 that powers Git to handle repositories at Microsoft scale.
 
 ## Contributing
