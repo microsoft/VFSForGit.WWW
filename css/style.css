@@ -4,6 +4,7 @@
   padding-bottom: 48px;
   padding-top: 48px;
 }
+
 #gvfs-pageHeader img {
   max-width: 100%;
 }
@@ -12,11 +13,13 @@
   #gvfs-pageHeader img {
     display: none;
   }
+
   .m-content-placement {
     padding-left: 12px;
     padding-right: 12px;
   }
 }
+
 #gvfs-howDoesItWork {
   background: #f4f4f4 url("../images/bg-grey-left.png") bottom left no-repeat;
   margin-top: 48px;
@@ -34,6 +37,7 @@
   margin-top: 48px;
   padding-bottom: 48px;
 }
+
 #gvfs-trustedBy span {
   display: inline-block;
   margin-top: -36px;
@@ -46,7 +50,9 @@
   color: #fff;
   margin-top: 48px;
   padding-bottom: 128px;
+  text-align: center;
 }
+
 #gvfs-footer a {
   color: #fff;
 }
@@ -61,12 +67,14 @@
   color: #666;
   text-align: center;
 }
+
 #gvfs-attribution .c-paragraph-3 {
   margin: 0;
   padding: 12px 0;
 }
+
 #gvfs-attribution img {
-  display: inline;
+  display: inline-block;
   height: 1.25em;
   vertical-align: text-bottom;
 }
@@ -77,10 +85,10 @@
 
 .gvfs-videoWrapper {
   position: relative;
-  width: 390px;
-  height: 220px;
-  margin: 25px 0 0 50px;
+  overflow: hidden;
+  padding-top: 56.25%;
 }
+
 .gvfs-videoWrapper iframe {
   position: absolute;
   top: 0;
