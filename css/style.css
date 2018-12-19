@@ -4,7 +4,6 @@
   padding-bottom: 48px;
   padding-top: 48px;
 }
-
 #vfsforgit-pageHeader img {
   max-width: 100%;
 }
@@ -13,13 +12,11 @@
   #vfsforgit-pageHeader img {
     display: none;
   }
-
   .m-content-placement {
     padding-left: 12px;
     padding-right: 12px;
   }
 }
-
 #vfsforgit-howDoesItWork {
   background: #f4f4f4 url("../images/bg-grey-left.png") bottom left no-repeat;
   margin-top: 48px;
@@ -37,7 +34,6 @@
   margin-top: 48px;
   padding-bottom: 48px;
 }
-
 #vfsforgit-trustedBy span {
   display: inline-block;
   margin-top: -36px;
@@ -52,7 +48,6 @@
   padding-bottom: 128px;
   text-align: center;
 }
-
 #vfsforgit-footer a {
   color: #fff;
 }
@@ -67,12 +62,10 @@
   color: #666;
   text-align: center;
 }
-
 #vfsforgit-attribution .c-paragraph-3 {
   margin: 0;
   padding: 12px 0;
 }
-
 #vfsforgit-attribution img {
   display: inline-block;
   height: 1.25em;
@@ -86,9 +79,9 @@
 .vfsforgit-videoWrapper {
   position: relative;
   overflow: hidden;
+  height: 220px;
   padding-top: 56.25%;
 }
-
 .vfsforgit-videoWrapper iframe {
   position: absolute;
   top: 0;
