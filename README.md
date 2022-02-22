@@ -1,6 +1,6 @@
 # VFSforGit.WWW 
 
-This is the [web site for VFS for Git](https://vfsforgit.org/), the technology
+This was the web site for VFS for Git, the technology
 that powers Git to handle repositories at Microsoft scale.
 
 ## Contributing
